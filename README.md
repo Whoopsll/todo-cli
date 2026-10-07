@@ -25,17 +25,16 @@ python todo.py
 
 ## 使用示例
 ```
-> add 学习git分支重命名
-> add 部署code-server
-> list
-1. [ ] 学习git分支重命名
+$ python todo.py
+请输入:待办已添加
+请输入:待办已添加
+请输入:1. [ ] 学习git分支重命名
 2. [ ] 部署code-server
-> done 1
-> list
-1. [✓] 学习git分支重命名
+已完成 0/2
+请输入:请输入:1. [x] 学习git分支重命名
 2. [ ] 部署code-server
-> clear
-> list
-1. [ ] 部署code-server
-> q
+已完成 1/2
+请输入:请输入:1. [ ] 部署code-server
+已完成 0/1
+请输入:程序退出中...
 ```
