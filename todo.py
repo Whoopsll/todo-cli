@@ -49,6 +49,7 @@ def done(tasks,item):
     else:
         tasks[itemNum-1]["done"] = True
     save_data(DATA_FILE, tasks)
+    print(f"已标记第 {itemNum} 条完成")
 
 
 def clear(tasks):
@@ -57,7 +58,6 @@ def clear(tasks):
         return
     tasks[:] = [task for task in tasks if not task["done"]]
     save_data(DATA_FILE, tasks)
-
 
 # 先加载json文件中数据,以防后面被覆写
 tasks = load_data(DATA_FILE)
